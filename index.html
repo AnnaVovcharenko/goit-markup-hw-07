@@ -41,6 +41,15 @@
             </li>
           </ul>
         </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="32" height="22">
+            <use href="./images/icons.svg#burger-menu"></use>
+          </svg>
+        </button>
         <address class="header-address">
           <ul class="header-address-list list">
             <li class="header-contact-mail">
@@ -59,6 +68,7 @@
         </address>
       </div>
     </header>
+    -->
 
     <!-- main-->
     <main>
@@ -74,8 +84,8 @@
         </div>
       </section>
       <!-- section 1-->
-      <section class="section-advantage">
-        <div class="div-advantage container">
+      <section class="section">
+        <div class="container">
           <h2 class="subject visually-hidden">Our advantage</h2>
           <ul class="advantage-list list">
             <li class="advantage-item">
@@ -129,7 +139,6 @@
           </ul>
         </div>
       </section>
-
       <!-- section 2 product-->
       <section class="section-product">
         <div class="div-product container">
@@ -138,6 +147,7 @@
             <li class="product-item">
               <img
                 class="product-item-img"
+                srcset="./images/section2/Rectangle1.jpg 1x, ./images/section2/Rectangle71@2x-1.jpg 2x"
                 src="./images/section2/Rectangle1.jpg"
                 alt="the computer on which the site is displayed."
                 width="360"
@@ -147,6 +157,7 @@
             <li class="product-item">
               <img
                 class="product-item-img"
+                srcset="./images/section2/Rectangle2.jpg 1x, ./images/section2/Rectangle71@2x-2.jpg 2x"
                 src="./images/section2/Rectangle2.jpg"
                 alt="open application on the mobile phone."
                 width="360"
@@ -156,6 +167,7 @@
             <li class="product-item">
               <img
                 class="product-item-img"
+                srcset="./images/section2/Rectangle3.jpg 1x, ./images/section2/Rectangle71@2x-3.jpg 2x"
                 src="./images/section2/Rectangle3.jpg"
                 alt="the program is open on the mobile phone and computer."
                 width="360"
@@ -166,21 +178,22 @@
         </div>
       </section>
       <!-- section 3 team-->
-      <section class="section-team">
-        <div class="div-team container">
+      <section class="section-team section">
+        <div class="container">
           <h2 class="team-title subject">Our Team</h2>
           <ul class="team-list list">
             <li class="team-item">
               <img
                 class="team-item-img"
+                srcset="./images/section3/img1j.jpg 1x, ./images/section3/img@2x-1.jpg 2x"
                 src="./images/section3/img1j.jpg"
                 alt="a man with dark hair and a beard."
                 width="264"
                 height="260"
               />
               <div class="div-team-item">
-                <h3 class="team-item-title heading">Mark Guerrero</h3>
-                <p class="team-item-text small">Product Designer</p>
+                <h3 class="team-item-title heading-team">Mark Guerrero</h3>
+                <p class="team-item-text small-team">Product Designer</p>
                 <ul class="team-media-list list">
                   <li class="team-media-item">
                     <a
@@ -240,14 +253,15 @@
             <li class="team-item">
               <img
                 class="team-item-img"
+                srcset="./images/section3/img2j.jpg 1x, ./images/section3/img@2x-2.jpg 2x"
                 src="./images/section3/img2j.jpg"
                 alt="a man with blond hair and a sincere smile."
                 width="264"
                 height="260"
               />
               <div class="div-team-item">
-                <h3 class="team-item-title heading">Tom Ford</h3>
-                <p class="team-item-text small">Frontend Developer</p>
+                <h3 class="team-item-title heading-team">Tom Ford</h3>
+                <p class="team-item-text small-team">Frontend Developer</p>
                 <ul class="team-media-list list">
                   <li class="team-media-item">
                     <a
@@ -307,14 +321,15 @@
             <li class="team-item">
               <img
                 class="team-item-img"
+                srcset="./images/section3/img3j.jpg 1x, ./images/section3/img@2x-3.jpg 2x"
                 src="./images/section3/img3j.jpg"
                 alt="woman with dark long hair."
                 width="264"
                 height="260"
               />
               <div class="div-team-item">
-                <h3 class="team-item-title heading">Camila Garcia</h3>
-                <p class="team-item-text small">Marketing</p>
+                <h3 class="team-item-title heading-team">Camila Garcia</h3>
+                <p class="team-item-text small-team">Marketing</p>
                 <ul class="team-media-list list">
                   <li class="team-media-item">
                     <a
@@ -374,14 +389,15 @@
             <li class="team-item">
               <img
                 class="team-item-img"
+                srcset="./images/section3/img4j.jpg 1x, ./images/section3/img@2x-4.jpg 2x"
                 src="./images/section3/img4j.jpg"
                 alt="a man with dark hair in a t-shirt who is smiling."
                 width="264"
                 height="260"
               />
               <div class="div-team-item">
-                <h3 class="team-item-title heading">Daniel Wilson</h3>
-                <p class="team-item-text small">UI Designer</p>
+                <h3 class="team-item-title heading-team">Daniel Wilson</h3>
+                <p class="team-item-text small-team">UI Designer</p>
                 <ul class="team-media-list list">
                   <li class="team-media-item">
                     <a
@@ -441,9 +457,10 @@
           </ul>
         </div>
       </section>
+
       <!-- section 4 customers-->
-      <section class="customers">
-        <div class="container">
+      <section class="section">
+        <div class="container customers-container">
           <h2 class="container-title subject">Customers</h2>
           <ul class="customers-list list">
             <li class="customers-item">
@@ -528,7 +545,6 @@
         </div>
       </section>
     </main>
-
     <!--footer-->
     <footer class="footer">
       <div class="div-footer container">
@@ -706,6 +722,97 @@
         </form>
       </div>
     </div>
+    <!--Mobail menu-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-li">
+          <a href="./index.html" class="mobeile-link link">Studio</a>
+        </li>
+        <li class="mobile-li">
+          <a href="./portfolio.html" class="mobeile-link link">Portfolio</a>
+        </li>
+        <li class="mobile-li">
+          <a href="" class="mobeile-link link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobail-tel list">
+        <li class="li-mob-adr">
+          <a class="link-tel" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="li-mob-adr">
+          <a class="link-mail" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-media-list list">
+        <li class="mobile-media-item">
+          <a
+            class="mobile-social-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram icon"
+          >
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-media-item">
+          <a
+            class="mobile-social-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter icon"
+          >
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-media-item">
+          <a
+            class="mobile-social-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-media-item">
+          <a
+            class="mobile-social-link link"
+            href=""
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin icon"
+          >
+            <svg class="mobile-social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
