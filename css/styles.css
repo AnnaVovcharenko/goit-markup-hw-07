@@ -121,6 +121,25 @@ ol {
     font-weight: 400;
   }
 }
+
+.small-address{
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.04em;
+color: #434455;
+} 
+
+@media only screen and (min-width: 1158px) {
+  .small-address {
+    font-size: 16px;
+line-height: 1.5;
+  }
+}
+
+
+
 .small-team {
   font-size: 16px;
   font-weight: 400;
@@ -200,7 +219,7 @@ ol {
 /*!!!!!!!!!!!!!!!!!!!!!!-----------------header styles-----------!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
 .header {
-  z-index: 100;
+  z-index: 99;
   position: sticky;
   top: 0;
   background: #ffffff;
@@ -222,6 +241,7 @@ ol {
 .header-nav {
   display: flex;
   align-items: center;
+
 }
 .header-loga {
   font-family: Raleway, sans-serif;
@@ -239,8 +259,6 @@ ol {
     margin-right: 0;
   }
 }
-
-
 
 .loga {
   color: var(--color-grey);
@@ -292,7 +310,7 @@ ol {
 .header-address {
   font-style: normal;
    margin-left: auto;
-   padding: 16px 0;
+   padding: 12px 0;
 }
 @media only screen and (max-width: 767px) {
   .header-address {
@@ -348,6 +366,8 @@ ol {
   margin: 0;
   margin-left: auto;
   padding: 0;
+  padding-bottom: 24px;
+  padding-top: 24px;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -433,17 +453,28 @@ font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: #2E2F42;
+
 }
+
 
 .mobeile-link{
   color: #2E2F42;
-transform: var(--anim-fast);
 }
-.mobeile-link:focus,
-.mobeile-link:hover{
+
+.mobile-menu .mobeile-link{
+/*color: #2E2F42;
+transform: var(--anim-fast);*/
+}
+.mobile-menu .mobeile-link:focus,
+.mobile-menu .mobeile-link:hover,
+.mobile-menu .mobeile-link:active {
   color: #404BBF;
 }
+.active{
+  color: #404BBF;
+}
+
+
 .mobail-tel {
   display: block;
   
@@ -1278,14 +1309,27 @@ color: #434455;
   top: calc(50%);
   left: calc(50%);
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
-  min-height: 576px;
+  min-width: 284px; 
   background-color: var(--color-dairy);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 72px 24px 24px;
+}
+@media only screen and (min-width: 428px) {
+  .modal {
+    min-width: 392px;
+    min-height: 586px;
+    padding: 72px 16px 16px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 408px; 
+    min-height: 584px;
+    padding: 72px 24px 24px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1331,18 +1375,29 @@ color: #434455;
   display: block;
   margin-bottom: 16px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 11px;
 
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue-modal) #2e2f42;
 }
+@media only screen and (min-width: 428px) {
+  .modal-text {
+    font-size: 16px; 
+  }
+}
+
+
 .modal-label {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
+  font-size: 10px;
 }
-
+@media only screen and (min-width: 428px) {
+  .modal-label {
+    font-size: 12px;
+  }
+}
 .input-modal {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -1402,14 +1457,19 @@ color: #434455;
   display: flex;
   align-items: center;
   margin-bottom: 24px;
-  font-size: 12px;
+  
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 8px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+}
+@media only screen and (min-width: 428px) {
+  .modal-label-checkbox {
+    font-size: 12px; 
+  }
 }
 
 .modal-checkbox-input {
@@ -1439,8 +1499,8 @@ color: #434455;
 
 .modal-botton {
   display: block;
-  min-width: 169px;
-  height: 56px;
+  min-width: 158px;
+  height: 45px;
   border: none;
   margin-left: auto;
   margin-right: auto;
@@ -1450,12 +1510,23 @@ color: #434455;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-white);
   transition: background-color var(--anim-fast);
 }
+
+@media only screen and (min-width: 428px) {
+  .modal-botton {
+    min-width: 169px;
+    height: 56px; 
+    font-size: 16px;
+  }
+}
+
+
+
 .modal-botton:hover,
 .modal-botton:focus,
 .modal-botton:active {
@@ -1478,5 +1549,5 @@ color: #434455;
   --color-dairy: #fcfcfc;
 
   --anim-fast: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  --modal-idx: 100%;
+  --modal-idx: 100;
 }
